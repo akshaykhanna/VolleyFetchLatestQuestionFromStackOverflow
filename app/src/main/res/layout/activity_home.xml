@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:hint="@string/text_hint"
+            android:paddingLeft="@dimen/et_left_padding"
+            android:layout_margin="@dimen/et_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="@dimen/et_font"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            />
+        <ImageButton
+            android:id="@+id/btnObjRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reload"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/ic_reload_btn"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15">
+
+
+
+
+        <ListView
+            android:id="@+id/lv_items"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" />
+    </LinearLayout>
+
+
+</LinearLayout>
